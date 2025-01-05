@@ -2,6 +2,7 @@ package com.webdevelopment.controllers;
 
 import com.webdevelopment.dto.LoginRequest;
 import com.webdevelopment.dto.LoginResponse;
+import com.webdevelopment.service.AuthService;
 import com.webdevelopment.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,7 +24,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) {
-        LoginResponse loginResponse = authService.login(LoginRequest);
+        LoginResponse loginResponse = authService.login(loginRequest);
 
         if (loginRequest == null) {
             return ResponseEntity.ok(loginResponse);
