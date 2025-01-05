@@ -1,7 +1,7 @@
 package com.webdevelopment.controllers;
 
 import com.webdevelopment.entities.User;
-import com.webdevelopment.repository.UserRepository;
+import com.webdevelopment.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

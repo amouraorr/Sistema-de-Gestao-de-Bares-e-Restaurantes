@@ -1,4 +1,4 @@
-package com.webdevelopment.service;
+package com.webdevelopment.services;
 
 import org.springframework.stereotype.Service;
 import io.jsonwebtoken.Jwts;

@@ -1,4 +1,4 @@
-package com.webdevelopment.repository;
+package com.webdevelopment.repositories;
 
 import com.webdevelopment.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;

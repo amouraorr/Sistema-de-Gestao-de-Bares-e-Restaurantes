@@ -1,7 +1,7 @@
-package com.webdevelopment.service;
+package com.webdevelopment.services;
 
 import com.webdevelopment.entities.User;
-import com.webdevelopment.repository.UserRepository;
+import com.webdevelopment.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

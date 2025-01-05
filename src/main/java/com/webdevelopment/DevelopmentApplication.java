@@ -1,4 +1,4 @@
-package src.main.java.com.webdevelopment;
+package com.webdevelopment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

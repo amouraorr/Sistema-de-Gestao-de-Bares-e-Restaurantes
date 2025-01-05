@@ -1,4 +1,4 @@
-package com.webdevelopment.service;
+package com.webdevelopment.services;
 
 import com.webdevelopment.dto.LoginRequest;
 import com.webdevelopment.dto.LoginResponse;

@@ -2,8 +2,8 @@ package com.webdevelopment.controllers;
 
 import com.webdevelopment.dto.LoginRequest;
 import com.webdevelopment.dto.LoginResponse;
-import com.webdevelopment.service.AuthService;
-import com.webdevelopment.service.UserService;
+import com.webdevelopment.services.AuthService;
+import com.webdevelopment.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

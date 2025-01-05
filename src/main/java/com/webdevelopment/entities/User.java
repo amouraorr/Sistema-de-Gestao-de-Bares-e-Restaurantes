@@ -1,6 +1,7 @@
 package com.webdevelopment.entities;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @Entity
+@Data
 @Table(name = "users")
 public class User {
 
