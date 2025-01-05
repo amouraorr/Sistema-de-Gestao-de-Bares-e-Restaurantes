@@ -1,0 +1,106 @@
+/* Main container for button-boxes */
+.div-lines {
+  display: flex;
+  flex-wrap: wrap;                /* Allow items to wrap to the next line */  
+  justify-content: flex-start;     /* Align items to the start of the row */
+  max-width: 100%;                 /* Ensure it uses full width available */
+}
+
+/* Media query for screens larger than 768px (desktop view) */
+@media (min-width: 769px) {
+  .div-lines {
+    gap: 6px;                     /* Adjust space between items if needed */
+  }
+  .div-lines .button-box {
+    width: calc((100% - 50px) / 8); /* 8 items per row with adjusted gap */
+  }
+}
+
+/* Media query for screens smaller than 768px (tablet) */
+@media (max-width: 768px) {
+  .div-lines .button-box {
+    width: calc(50% - 10px);       /* 2 items per row */
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+  .div-lines .button-box {
+    width: calc(100% - 10px);      /* 1 item per row */
+  }
+}
+
+
+/* Button box style (no changes here) */
+.button-box {
+  display: flex;                    /* Flexbox layout for each box */
+  flex-direction: row;              /* Ensure the items inside each button-box stay in the row */
+  padding: 10px;
+  gap: 5px;                         /* Space between internal elements */
+  border: 1px solid rgb(255, 255, 255); /* White border around each box */
+  background-color: #b3c2d0;        /* Background color */
+  min-width: 100px;
+  max-width: 100px;
+  max-height: 62px;
+  min-height: 62px;
+  align-items: center;              /* Center the content vertically */
+  justify-content: space-between;   /* Distribute space evenly between items inside the box */
+}
+
+
+/* Adjustments for very small screens (optional, for portrait or small tablets) */
+@media (max-width: 480px) {
+  .div-lines .button-box {
+    width: calc(100% - 10px); /* 1 item per row */
+  }
+}
+
+/* Internal content layout inside each button-box */
+.button-box > div:first-child {
+  display: flex;
+  flex-direction: column;           /* Stack icons vertically */
+  align-items: flex-start;          /* Align icons to the left */
+  margin-top: 10px;
+}
+
+/* mat-icon styles */
+.button-box mat-icon {
+  font-size: 17px;
+  line-height: 1;
+  gap: -10px;
+  margin-top: -3px;
+  padding: 0;
+}
+
+/* Table number styling */
+.table-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;          /* Center the table number content */
+}
+
+/* Table number text styling */
+.table-number span {
+  font-size: 20px;
+  color: rgb(255, 255, 255);        /* White color for the number */
+}
+
+/* Styling for h4 elements inside button-box */
+.button-box h4 {
+  font-size: 10px;
+  line-height: 1;
+  margin-top: -27px;
+  margin-left: 20px;
+  margin-bottom: 10px;  
+  padding: 0;
+}
+
+/* Occupied status color */
+.occupied {
+  background-color: red; /* Define the color for 'occupied' */
+}
+
+/* Reserved status color */
+.reserved {
+  background-color: #0097b1ff; /* Define the color for 'reserved' */
+}

@@ -1,0 +1,79 @@
+.header-toolbar {
+  display: flex; /* Torna o contêiner flexível */
+  justify-content: space-between; /* Distribui o conteúdo de forma que os itens fiquem nos extremos */
+  align-items: center; /* Alinha os itens verticalmente */
+  background-color: #0b1c32ff;
+  color: white;
+  padding: 0 16px; /* Adiciona espaçamento nas laterais */
+}
+
+.left-items {
+  display: flex; /* Agrupa os itens à esquerda */
+  align-items: center; /* Alinha verticalmente os itens */
+}
+
+.fiveicon {
+  color: white; /* Cor do ícone */
+  font-size: 24px; /* Tamanho do ícone */
+  margin-right: 8px; /* Espaço entre o ícone e o nome */
+}
+
+.font-angular-script {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 20px; /* Tamanho do nome */
+}
+
+.right-items {
+  display: flex; /* Agrupa os itens à direita */
+  align-items: center;
+}
+
+.username {
+  color: rgb(255, 255, 255);
+  font-size: small;
+  margin-right: 16px; /* Espaço entre o username e o próximo elemento */
+}
+
+.logout-button {
+  background-color: #85acc6ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+  border-radius: 0;
+  margin-left: 16px;
+  width: 50%;
+}
+
+.logout-button:hover {
+  background-color: darkorange;
+}
+
+.clock-button {
+  background-color: #2d4e6fff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+  border-radius: 0;
+  margin-left: 16px;
+  width: 80%;
+}
+
+/* Esconde o botão do relógio e o username em telas pequenas */
+@media (max-width: 600px) {
+  .clock-button, .username {
+    display: none; /* Esconde o username e o clock */
+  }
+
+  .logout-button {
+    margin-left: auto; /* Move o logout para a extrema direita */
+  }
+}

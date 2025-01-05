@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+
+<mat-toolbar class="header-toolbar">
+  <!-- Itens à esquerda -->
+  <div class="left-items">
+    <img src="favicon.png" alt="User Icon" style="height: 50px; width: 50px 8px;" />
+    <span class="font-angular-script">GourmetX</span>
+  </div>
+  
+  <!-- Itens à direita -->
+  <div class="right-items">
+    <span class="username">System User: {{ username }}</span>
+    <button class="logout-button" mat-button (click)="logout()">Logout</button>
+    <button class="clock-button" id="timeButton">00:00:00</button>
+  </div>
+</mat-toolbar>

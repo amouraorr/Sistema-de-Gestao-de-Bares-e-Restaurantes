@@ -1,0 +1,30 @@
+<div class="div-lines">
+  
+    <div 
+      *ngFor="let table of tables" class="button-box" [ngClass]="{
+        'available': table.status === 'available',
+        'occupied': table.status === 'occupied',
+        'reserved': table.status === 'reserved'
+      }">
+      
+      <div>
+        <div>
+          <mat-icon>account_circle</mat-icon>
+          <h4>{{ table.customers }}</h4>
+        </div>
+        <div>
+          <mat-icon>shopping_cart</mat-icon>
+          <h4>{{ table.tablevalue }}</h4>
+        </div>
+        <div>
+          <mat-icon>info</mat-icon>
+          <h4>{{ table.status }}</h4>
+        </div>
+      </div>
+
+      <div class="table-number">
+        <span>{{ table.number }}</span>
+      </div>
+    </div>
+
+</div>
