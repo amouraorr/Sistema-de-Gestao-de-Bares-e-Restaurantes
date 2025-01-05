@@ -1,6 +1,8 @@
 package com.webdevelopment.services;
 
 
+import com.webdevelopment.entities.TableEntity;
+import com.webdevelopment.repositories.TableRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
