@@ -1,4 +1,4 @@
-package com.webdevelopment.development;
+package com.webdevelopment.controllers;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
